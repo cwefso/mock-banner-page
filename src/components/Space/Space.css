@@ -1,0 +1,295 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	list-style: none;
+}
+
+body {
+	line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+nav ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+
+a {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+	background-color: #ff9;
+	color: #000;
+	text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+	background-color: #ff9;
+	color: #000;
+	font-style: italic;
+	font-weight: bold;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+	border-bottom: 1px dotted;
+	cursor: help;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #cccccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+input,
+select {
+	vertical-align: middle;
+}
+
+/*add your google webfonts they must be the first lines in your CSS*/
+
+/* @import url(https://fonts.googleapis.com/css?family=Share+Tech); */
+
+/*define the general banner layout*/
+
+figure,
+.img-container {
+	min-width: 728px;
+	min-height: 90px;
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	overflow: hidden;
+	perspective: 400px;
+}
+
+.img-container {
+	background-color: white;
+	opacity: 0;
+}
+
+/*establish a parent/child relationship for precise positioning*/
+
+figure {
+	position: relative;
+}
+
+h1,
+h2,
+ul,
+img,
+button,
+.logo {
+	position: absolute;
+}
+
+/*Now dress up the type and layout*/
+
+h1,
+h2 {
+	font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+	color: white;
+	padding: 10px;
+	font-size: 55px;
+	letter-spacing: 3px;
+}
+
+button {
+	font: italic 20px mrs-eves, serif;
+	font-size: x-large;
+	padding: 5px 40px;
+	border: 3px solid white;
+	background-color: rgba(115, 0, 195);
+	color: white;
+	font-weight: bolder;
+}
+
+li {
+	font-family: Futura, Trebuchet MS, Arial, sans-serif;
+	text-transform: uppercase;
+	text-align: right;
+	color: white;
+	font-size: 60px;
+	/* word-spacing: -10px; */
+	line-height: 60px;
+	text-shadow: 0 0 10px black;
+}
+
+ul,
+.main {
+	display: flex;
+	flex-direction: row;
+}
+
+.logo {
+	font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
+	color: white;
+	font-size: 30px;
+	width: 290px;
+	margin-left: 5px;
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+/*Now position all the elements*/
+
+img {
+	right: 0;
+}
+
+h1 {
+	top: 10px;
+	left: 75px;
+}
+
+h2 {
+	top: 10px;
+	right: 220px;
+}
+
+ul {
+	top: 13.5px;
+	right: 90px;
+}
+
+button {
+	top: 14px;
+	right: 59px;
+	height: 70%;
+	width: 30%;
+	border-radius: 15px;
+}
+
+.logo {
+	top: 47px;
+	right: 214px;
+}
+
+body {
+	display: flex;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+button:hover {
+	background-color: rgb(65, 0, 112);
+}
