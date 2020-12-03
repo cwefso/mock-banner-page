@@ -171,8 +171,8 @@ select {
 
 /*define the general banner layout*/
 
-figure,
-.img-container {
+.space-figure,
+.space-img-container {
 	min-width: 728px;
 	min-height: 90px;
 	border: 1px solid rgba(0, 0, 0, 0.8);
@@ -180,30 +180,30 @@ figure,
 	perspective: 400px;
 }
 
-.img-container {
+.space-img-container {
 	background-color: white;
 	opacity: 0;
 }
 
 /*establish a parent/child relationship for precise positioning*/
 
-figure {
+.space-figure {
 	position: relative;
 }
 
-h1,
-h2,
-ul,
-img,
-button,
-.logo {
+.space-h1,
+.space-h2,
+.space-ul,
+.space-img,
+.space-button,
+.space-logo {
 	position: absolute;
 }
 
 /*Now dress up the type and layout*/
 
-h1,
-h2 {
+.space-h1,
+.space-h2 {
 	font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
 	color: white;
 	padding: 10px;
@@ -211,7 +211,7 @@ h2 {
 	letter-spacing: 3px;
 }
 
-button {
+.space-button {
 	font: italic 20px mrs-eves, serif;
 	font-size: x-large;
 	padding: 5px 40px;
@@ -221,7 +221,7 @@ button {
 	font-weight: bolder;
 }
 
-li {
+.space-li {
 	font-family: Futura, Trebuchet MS, Arial, sans-serif;
 	text-transform: uppercase;
 	text-align: right;
@@ -232,13 +232,13 @@ li {
 	text-shadow: 0 0 10px black;
 }
 
-ul,
-.main {
+.space-ul,
+.space-main {
 	display: flex;
 	flex-direction: row;
 }
 
-.logo {
+.space-logo {
 	font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
 	color: white;
 	font-size: 30px;
@@ -249,26 +249,26 @@ ul,
 
 /*Now position all the elements*/
 
-img {
+.space-img {
 	right: 0;
 }
 
-h1 {
+.space-h1 {
 	top: 10px;
 	left: 75px;
 }
 
-h2 {
+.space-h2 {
 	top: 10px;
 	right: 220px;
 }
 
-ul {
+.space-ul {
 	top: 13.5px;
 	right: 90px;
 }
 
-button {
+.space-button {
 	top: 14px;
 	right: 59px;
 	height: 70%;
@@ -276,20 +276,20 @@ button {
 	border-radius: 15px;
 }
 
-.logo {
-	top: 47px;
+.space-logo {
+	top: 18px;
 	right: 214px;
 }
 
-body {
+/* .space-body {
 	display: flex;
 	height: 100vh;
 	align-items: center;
 	justify-content: center;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-}
+} */
 
-button:hover {
+.space-button:hover {
 	background-color: rgb(65, 0, 112);
 }

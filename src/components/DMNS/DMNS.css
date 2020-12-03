@@ -166,7 +166,7 @@ select {
 }
 
 
-figure {
+.dmns-figure {
 	width: 300px;
 	height: 250px;
 	border: 1px solid rgba(0, 0, 0, 0.8);
@@ -175,29 +175,29 @@ figure {
 
 /*establish a parent/child relationship for precise positioning*/
 
-figure {
+.dmns-figure {
 	position: relative;
 }
 
-h1,
-h2,
-ul,
-img,
-button,
-.logo,
-.background {
+.dmns-h1,
+.dmns-h2,
+.dmns-ul,
+.dmns-img,
+.dmns-button,
+.dmns-logo,
+.dmns-background {
 	position: absolute;
 }
 
 /*Now dress up the type and layout*/
 
-.background {
+.dmns-background {
 	background-color: rgba(255, 255, 255, 0.3);
 	height: 100%;
 	width: 100%;
 }
 
-.logo {
+.dmns-logo {
 	font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
 	color: white;
 	font-size: 30px;
@@ -206,14 +206,14 @@ button,
 	background-color: rgba(255, 255, 255, 0.9);
 }
 
-button {
+.dmns-button {
 	font-family: mrs-eaves, serif;
 	padding: 5px 40px;
 	border: 3px solid white;
 	background-color: rgba(161, 169, 18, 0.9);
 }
 
-li {
+.dmns-li {
 	font-family: Futura, Trebuchet MS, Arial, sans-serif;
 	text-transform: uppercase;
 	text-align: right;
@@ -225,34 +225,33 @@ li {
 
 /*Now position all the elements*/
 
-img {
+.dmns-img {
 	right: 0;
 }
 
-.logo {
+.dmns-logo {
 	top: 55px;
-	left: 15px;
 }
 
-h2 {
+.dmns-h2 {
 	top: 114px;
 	right: 0;
 }
 
-ul {
+.dmns-ul {
 	top: 15px;
 	left: 30px;
 	display: flex;
 	flex-direction: column;
-	align-items: flex-end;
+	align-items: end;
 }
 
-button {
+.dmns-button {
 	top: 170px;
 	left: 78px;
 }
 
-body {
+.dmns-body {
 	display: flex;
 	height: 100vh;
 	align-items: center;

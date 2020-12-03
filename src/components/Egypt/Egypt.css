@@ -165,9 +165,10 @@ select {
 	vertical-align: middle;
 }
 
+
 /*set size of ad*/
 
-figure, span {
+.egypt-figure {
 	width: 160px;
 	height: 600px;
 	border: 1px solid rgba(0, 0, 0, 0.8);
@@ -176,27 +177,27 @@ figure, span {
 
 /*establish a parent/child relationship for precise positioning*/
 
-figure, span {
+.egypt-figure {
 	position: relative;
 }
 
-ul,
-img,
-button,
-.sarc,
-.text {
+.egypt-ul,
+.egypt-img,
+.egypt-button,
+.egypt-sarc,
+.egypt-text {
 	position: absolute;
 }
 
 /*style elements*/
-ul {
+.egypt-ul {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 
-li {
+.egypt-li {
 	font-family: Futura, Trebuchet MS, Arial, sans-serif;
 	text-transform: uppercase;
 	text-align: right;
@@ -206,7 +207,7 @@ li {
 	text-shadow: 0 0 10px black;
 }
 
-.logo {
+.egypt-logo {
 	font-family: Calibri, Candara, Segoe, Segoe UI, Optima, Arial, sans-serif;
 	color: white;
 	font-size: 30px;
@@ -215,7 +216,7 @@ li {
 	background-color: rgba(255, 255, 255, 0.9);
 }
 
-button {
+.egypt-button {
 	font: italic 18px mrs-eves, serif;
 	font-size: large;
 	padding: 5px 40px;
@@ -224,14 +225,14 @@ button {
 	color: white;
 }
 
-button {
+.egypt-button {
 	height: 10%;
 	width: 90%;
 	border-radius: 15px;
 }
 
-h2,
-h1 {
+.egypt-h2,
+.egypt-h1 {
 	font-family: Futura, Trebuchet MS, Arial, sans-serif;
 	text-align: right;
 	color: white;
@@ -240,52 +241,53 @@ h1 {
 	text-shadow: 0 0 10px black;
 }
 
-.text {
+.egypt-text {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 
-span {
-	background-color: white;
-}
 
 /*position elements*/
-.pyramids {
+.egypt-pyramids {
 	right: -70px;
 	bottom: 20px;
 }
 
-.background {
+.egypt-background {
 	right: -20px;
 	top: -70px;
 }
 
-ul {
+.egypt-ul {
 	bottom: 300px;
 	left: 5px;
 }
 
-.logo {
+.egypt-logo {
 	left: -5px;
 	bottom: 0;
 }
 
-button {
+.egypt-button {
 	bottom: 200px;
 	right: 10px;
 }
 
-.text,
-.button {
+.egypt-text,
+.egypt-button {
 	right: 10px;
 }
 
-.text {
+.egypt-text {
 	top: 180px;
 }
 
-button:hover {
-	background-color: rgb(65, 0, 112);
+.egypt-sarc {
+	bottom: 0;
+}
+
+.egypt-button:hover {
+	background-color: rgb(46, 89, 109);
 }
